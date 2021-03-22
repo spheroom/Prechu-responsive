@@ -1,0 +1,156 @@
+@media (max-width: 1835px) {
+  .splide__arrow--prev {
+    left: 200px;
+  }
+  .splide__arrow--next {
+    right: 200px;
+  }
+}
+@media (max-width: 1400px) {
+  .splide__arrow--prev {
+    left: 100px;
+  }
+  .splide__arrow--next {
+    right: 100px;
+  }
+}
+@media (max-width: 1168px) {
+  .splide__arrow--prev,
+  .splide__arrow--next {
+    display: none;
+  }
+}
+@media (max-width: 1086px) {
+  body {
+    min-width: 100%;
+  }
+  header {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .gallery-container {
+    width: 100%;
+  }
+  .img-holder,
+  .text-holder {
+    width: 50%;
+  }
+  .img-holder {
+    text-align: center;
+  }
+  main {
+    width: 100%;
+  }
+  .contrary-wrapper {
+    width: 100%;
+  }
+  .contrary {
+    width: 33%;
+    padding: 0 20px;
+  }
+  .cart,
+  .bullet {
+    width: 50%;
+  }
+  .cart {
+    padding-left: 40px;
+  }
+  .bullet {
+    padding-right: 40px;
+  }
+  .footer-container {
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .shopping-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .bullet {
+    width: 100%;
+    padding: 0 60px;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .img-holder {
+    display: none;
+  }
+  .gallery-container {
+    justify-content: center;
+  }
+  .text-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 480px;
+  }
+  .text-holder h1 {
+    padding: 0;
+  }
+  .text-holder p {
+    text-align: justify;
+  }
+  .text-holder span {
+    margin-left: 0;
+  }
+  .contrary-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contrary p {
+    padding: 0 30px;
+  }
+  .contrary {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+  }
+  .contrary span {
+    margin-right: 20px;
+  }
+  .header-nav {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+}
+@media (max-width: 526px) {
+  .cart {
+    display: none;
+  }
+  .text-holder h1 {
+    font-size: 30px;
+  }
+  .text-holder p {
+    font-size: 18px;
+  }
+  .contrary span {
+    display: none;
+  }
+  .contrary p {
+    padding-bottom: 30px;
+  }
+  .contrary-wrapper {
+    margin-bottom: 0;
+  }
+  .bullet h3 {
+    font-size: 20px;
+  }
+  .bullet p {
+    font-size: 15px;
+  }
+}

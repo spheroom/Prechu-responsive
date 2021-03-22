@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "SegoeWPN";
+  src: url("../fonts/SegoeWPN.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SegoeWP-Light";
+  src: url("../fonts/SegoeWP-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

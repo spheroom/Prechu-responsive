@@ -1,0 +1,301 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font: 20px/26px "SegoeWPN", sans-serif;
+  min-width: 976px;
+}
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  width: 976px;
+  margin: auto;
+}
+header strong {
+  position: relative;
+  font: 42px/50px "SegoeWP-Light", sans-serif;
+  letter-spacing: 1px;
+  padding-left: 60px;
+}
+header strong:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  height: 45px;
+  width: 45px;
+  background-color: #5094f2;
+  border-radius: 50%;
+}
+header strong::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: url("../img/sprite.png") no-repeat -69px -20px;
+  width: 21px;
+  height: 18px;
+}
+.header-nav {
+  padding-top: 28px;
+  display: flex;
+}
+.header-nav li {
+  margin-right: 34px;
+}
+.header-nav li:last-child {
+  margin-right: 10px;
+}
+.header-nav li:first-child {
+  margin-right: 28px;
+}
+.header-nav li a {
+  text-decoration: none;
+  color: #6c6c6c;
+  border-bottom: 3px solid transparent;
+  padding: 0 3px 14px 3px;
+  letter-spacing: 0.5px;
+}
+.header-nav .active,
+.header-nav li a:hover {
+  border-bottom: 3px solid #5094f2;
+}
+/* ===== HEADER-END ===== */
+/* ===== GALLERY ===== */
+.gallery {
+  height: 490px;
+  background: url(../img/intro-bg.png);
+  background-size: cover;
+  margin-bottom: 56px;
+}
+.gallery:after {
+  content: "";
+  display: block;
+  height: 17px;
+  background: url(../img/fence-effect.png) repeat-x;
+}
+.gallery-container {
+  position: relative;
+  display: flex;
+  width: 976px;
+  margin: auto;
+}
+.splide__arrow svg {
+  display: none;
+}
+.splide__pagination {
+  display: none;
+}
+.splide__arrow--prev {
+  position: absolute;
+  top: 229px;
+  left: 417px;
+  background: url("../img/sprite.png") no-repeat -9px -6px;
+  width: 25px;
+  height: 63px;
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding-right: 10px;
+}
+.splide__arrow--next {
+  position: absolute;
+  top: 233px;
+  right: 414px;
+  background: url("../img/sprite.png") no-repeat -9px -6px;
+  width: 25px;
+  height: 63px;
+  transform: rotate(180deg);
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.img-holder,
+.text-holder {
+  width: 488px;
+}
+.img-holder img {
+  padding: 38px 0 0 40px;
+}
+.text-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+h1 {
+  padding-top: 140px;
+  font: 42px/58px "SegoeWP-Light", sans-serif;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+.text-holder p {
+  font: 25px/44px "SegoeWP-Light", sans-serif;
+  color: #fff;
+  letter-spacing: 0.6px;
+}
+.text-holder span {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 28px 0 0 14px;
+  width: 172px;
+  height: 42px;
+  background-color: #5094f2;
+  border-radius: 3px;
+}
+.text-holder a:before {
+  content: "\e903";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.text-holder a {
+  padding: 0 14px 5px 0;
+  text-decoration: none;
+  font: 22px/22px "SegoeWP-Light", sans-serif;
+  color: #fff;
+}
+
+/* ===== GALLERY-END ===== */
+/* ===== MAIN ===== */
+main {
+  width: 976px;
+  margin: auto;
+  margin-bottom: 45px;
+}
+.contrary-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 970px;
+  margin: auto;
+  margin-bottom: 86px;
+}
+.contrary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 252px;
+}
+.contrary span {
+  position: relative;
+  display: block;
+  min-width: 186px;
+  min-height: 186px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+.blue {
+  background-color: #5094f2;
+}
+.red {
+  background-color: #d94748;
+}
+.yellow {
+  background-color: #ebbb11;
+}
+.blue:before,
+.red:before,
+.yellow:before {
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 54px);
+  left: calc(50% - 33px);
+  font-size: 110px;
+}
+.blue:before {
+  content: "\e901";
+}
+.red:before {
+  content: "\e902";
+  font-size: 80px;
+  top: calc(50% - 40px);
+  left: calc(50% - 45px);
+}
+.yellow:before {
+  content: "\e900";
+  font-size: 90px;
+  top: calc(50% - 46px);
+  left: calc(50% - 46px);
+}
+h2 {
+  font: 20px/20px "SegoeWPN", sans-serif;
+  color: #73a9f5;
+  margin-bottom: 10px;
+}
+.contrary-wrapper p {
+  font: 14px/17px "SegoeWPN", sans-serif;
+  color: #9f9f9f;
+}
+/* ===== SHOPPING ===== */
+.shopping-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.cart {
+  width: 474px;
+}
+.bullet {
+  width: 456px;
+}
+.cart strong {
+  display: block;
+  font: 42px/42px "SegoeWPN", sans-serif;
+  color: #6f7173;
+  padding-left: 30px;
+  margin-bottom: 38px;
+}
+.cart img {
+  padding-left: 24px;
+}
+.bullet {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
+}
+h3 {
+  font: 26px/26px "SegoeWPN", sans-serif;
+  color: #6f7173;
+  margin-bottom: 20px;
+}
+.bullet p {
+  font: 15px/37px "SegoeWPN", sans-serif;
+  color: #909090;
+  letter-spacing: -0.1px;
+}
+/* ===== MAIN-END ===== */
+/* ===== FOOTER ===== */
+footer {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 970px;
+  height: 94px;
+  margin: auto;
+}
+.footer-container span {
+  font: 15px/15px "SegoeWPN", sans-serif;
+  color: #909090;
+}
+.footer-container span a {
+  text-decoration: none;
+  color: #909090;
+}
+/* ===== FOOTER-END ===== */
